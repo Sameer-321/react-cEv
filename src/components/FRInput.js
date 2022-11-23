@@ -1,7 +1,8 @@
 import React from "react";
 
 // function FRInput() {
-//   return (
+//   return ($ npm create vite
+
 //     <div>
 //       <input type="text" />
 //     </div>

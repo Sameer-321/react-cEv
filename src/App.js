@@ -13,13 +13,18 @@ import Table from "./components/Table";
 import RefsDemo from "./components/RefsDemo";
 import FocusInput from "./components/FocusInput";
 import FRParentInput from "./components/FRParentInput";
-
+import PracParent from "./components/PracParent";
+import State from "./compPrac/State";
+import EventBind from "./compPrac/EventBind";
+import Refs from "./compPrac/Refs";
+import FocusCompP from "./compPrac/FocusCompP";
 class App extends Component {
   render() {
     return (
       <div className="App">
         {/* <UserGreeting /> */}
-        <FRParentInput />
+        {/* <State /> */}
+        <FocusCompP />
       </div>
     );
   }
