@@ -18,13 +18,14 @@ import State from "./compPrac/State";
 import EventBind from "./compPrac/EventBind";
 import Refs from "./compPrac/Refs";
 import FocusCompP from "./compPrac/FocusCompP";
+import FwdREfP from "./compPrac/FwdREfP";
 class App extends Component {
   render() {
     return (
       <div className="App">
         {/* <UserGreeting /> */}
         {/* <State /> */}
-        <FocusCompP />
+        <FwdREfP />
       </div>
     );
   }
