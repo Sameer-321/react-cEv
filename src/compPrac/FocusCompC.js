@@ -1,16 +1,21 @@
 import React, { Component } from 'react'
 
-class FocusCompC extends Component {
-    constructor(props) {
-      super(props)
-        this.refp =React.createRef();
-    }
-    focusC(){
-        this.refp.current.focus()
-    }
+ class FocusCompC extends Component {
+  
+  constructor(props) {
+    super(props)
+    this.refChild = React.createRef();   
+  }
+
+  focusC=()=>{
+    this.refChild.current.focus()
+  }
+
   render() {
     return (
-      <input  refp={this.refp} />
+      <div>
+        <input type="text" ref={this.refChild} />
+      </div>
     )
   }
 }

@@ -1,20 +1,22 @@
 import React, { Component } from 'react'
-import FocusCompC from './FocusCompC'
+import FocusCompC from './FocusCompC';
+
 class FocusCompP extends Component {
   constructor(props) {
     super(props)
-    this.ref = React.createRef()
+    this.ref = React.createRef();
   }
-    clickHandler(){
-       this.ref.current.focusC();
-    }
-  
-    render() {
+
+  refer= ()=>{
+    this.ref.current.focusC()
+  }
+
+  render() {
     return (
-        <React.Fragment>
-      <FocusCompC  ref={this.ref}/>
-      <button onClick={this.clickHandler} >~~Focus~~</button>
-      </React.Fragment>
+      <div>
+        <FocusCompC ref={this.ref}/>
+        <button onClick={this.refer} >Focus</button>
+      </div>
     )
   }
 }
